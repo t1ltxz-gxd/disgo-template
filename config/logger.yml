@@ -1,0 +1,22 @@
+# Configuration for the logger
+# Service logger name
+name: kiwi
+
+# Configuration for file synchronization
+fileSyncer:
+  # Имя файла для файла журнала
+  filename: logs/stdout.log
+
+  # Maximum Log File Size
+  # Use Case: 128b, 256kb, 1mb, 2gb, 3tb, 4pb, 8eb
+  # Size is limited to int32, so it is recommended to use up to 2gb
+  maxSize: 32mb
+
+  # Maximum number of backup log files to save
+  maxBackups: 3
+
+  # Whether to Compress Backup Log Files
+  compress: true
+
+  # Maximum age of backup log files in days
+  maxAge: 7

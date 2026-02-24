@@ -1,0 +1,31 @@
+# .golangci.yml
+version: 2
+
+linters:
+  exclusions:
+    paths:
+      - docs
+  enable:
+    - govet
+    - staticcheck
+    - gosec
+    - errcheck
+    - revive
+    - lll
+
+formatters:
+  enable:
+    - gofmt
+
+linters-settings:
+  lll:
+    line-length: 120
+
+  revive:
+    rules:
+      - name: blank-imports
+
+formatters-settings:
+  gofmt:
+    simplify: true
+    tabs: true

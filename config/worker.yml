@@ -1,0 +1,4 @@
+maxRetries: 3
+baseBackoff: 500ms
+queueBuffer: 1024
+workers: 8

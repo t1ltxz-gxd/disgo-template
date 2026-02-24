@@ -1,0 +1,36 @@
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - echo "Formating project..."
+      - task fmt
+      - echo "Linting project..."
+      - task lint
+      - echo "Testing project..."
+      - task test
+    silent: true
+  lint:
+    cmds:
+      - golangci-lint run ./...
+    silent: true
+  fmt:
+    cmds:
+      - gofmt -s -w .
+    silent: true
+  test:
+    cmds:
+      - go test -v ./...
+    silent: true
+  compose-up:
+    cmds:
+      - docker-compose up -d
+    silent: true
+  compose-down:
+    cmds:
+      - docker-compose down
+    silent: true
+  compose-logs:
+    cmds:
+      - docker-compose logs
+    silent: true

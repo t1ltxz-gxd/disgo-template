@@ -1,0 +1,21 @@
+color:
+  primary: "#4CAF50"   # Rich Green (Hair Color / Thematic Basic)
+  secondary: "#9C27B0" # Intense Violet (Eye Color / Magical Energy)
+  tertiary: "#FFE082"  # soft light yellow (accents, accessories)
+  success: "#81C784"   # Soft green (success, positive states)
+  warning: "#FFB300"   # bright amber (warnings, warnings)
+  error: "#E53935"     # saturated red (errors, danger)
+
+status: "idle" # "online", "idle", "dnd" (do not disturb), "invisible"
+activity:
+  type: "playing" # "playing", "streaming", "listening", "watching", "competing"
+  name: "/help"
+  url: "" # Only used if type is "streaming"
+
+testGuildId: "1473137132532007025"
+
+sharding:
+  enabled: true
+  shardCount: 2
+  shardIds: [0, 1]
+  autoScaling: true

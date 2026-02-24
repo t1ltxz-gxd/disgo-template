@@ -1,0 +1,18 @@
+env: ${ENV:dev}
+
+bot:
+  token: ${BOT_TOKEN!}
+
+db:
+  host: ${DB_HOST:localhost}
+  port: ${DB_PORT:5432}
+  name: ${DB_NAME:kiwi}
+  user: ${DB_USER:kiwi}
+  password: ${DB_PASSWORD:kiwi}
+
+cache:
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+    password: ${REDIS_PASSWORD}
+    db: ${REDIS_DB:0}

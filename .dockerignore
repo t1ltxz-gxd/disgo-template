@@ -1,0 +1,11 @@
+*
+
+!cmd
+!config
+!internal
+!migrations
+
+!go.mod
+!go.sum
+
+!.env

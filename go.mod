@@ -1,4 +1,4 @@
-module go.t1ltxz.ninja/disgo-template
+module go.tilt.ninja/disgo-template
 
 go 1.26
 
